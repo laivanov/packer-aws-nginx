@@ -45,7 +45,7 @@ build {
 }
 
 /*
-
+# short version nginx
 packer {
   required_plugins {
     amazon = {
