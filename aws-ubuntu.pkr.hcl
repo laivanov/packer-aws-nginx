@@ -1,3 +1,4 @@
+# this will build an AWS Ubuntu image with nginx
 packer {
   required_plugins {
     amazon = {
@@ -45,6 +46,7 @@ build {
 
 
 /*
+# This will build AWS Ubuntu image with nginx and docker
 packer {
   required_plugins {
     amazon = {
