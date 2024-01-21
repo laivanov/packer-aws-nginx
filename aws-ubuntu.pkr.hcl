@@ -1,4 +1,3 @@
-/*
 packer {
   required_plugins {
     amazon = {
@@ -43,9 +42,9 @@ build {
     ]
   }
 }
-*/
 
 
+/*
 packer {
   required_plugins {
     amazon = {
@@ -94,3 +93,4 @@ build {
     ]
   }
 }
+*/
