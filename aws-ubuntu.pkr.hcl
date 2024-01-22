@@ -1,4 +1,4 @@
-# this will build an AWS Ubuntu image with nginx
+# this will build an AWS Ubuntu image with nginx & git
 packer {
   required_plugins {
     amazon = {
@@ -39,6 +39,7 @@ build {
       "sleep 30",
       "sudo apt-get update",
       "sudo apt-get install -y nginx",
+      "sudo apt-get install -y git",
       "echo \"FOO is $FOO\" > example.txt",
     ]
   }
@@ -84,6 +85,7 @@ build {
     inline = [
       "sudo apt-get update",
       "sudo apt-get install -y nginx",
+      "sudo apt-get install -y git",
     ]
   }
 
@@ -135,6 +137,8 @@ build {
       "sudo apt-get install -y nginx",
       # Install Docker
       "sudo apt-get install -y docker.io",
+      # Unstall GIT
+      "sudo apt-get install -y git",
 
       "echo \"FOO is $FOO\" > example.txt",
     ]
