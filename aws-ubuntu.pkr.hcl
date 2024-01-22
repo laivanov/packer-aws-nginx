@@ -45,7 +45,8 @@ build {
 }
 
 /*
-# short version nginx
+
+# version 2
 packer {
   required_plugins {
     amazon = {
@@ -90,7 +91,7 @@ build {
 */
 
 /*
-# This will build AWS Ubuntu image with nginx and docker
+# version 3 - nginx and docker
 packer {
   required_plugins {
     amazon = {
